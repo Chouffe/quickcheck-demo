@@ -49,7 +49,7 @@ sortIdempotenceProp sort xs = sort xs == (sort . sort) xs
 
 -- Is the length commutative?
 --
--- ∀ xs, length . sort xs == length . sort xs
+-- ∀ xs, length . sort xs == length xs
 --
 sortLengthCommutativeProp :: ([Int] -> [Int]) ->[Int] ->Bool
 sortLengthCommutativeProp sort xs = (length . sort) xs == length xs
